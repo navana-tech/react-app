@@ -1,6 +1,6 @@
 {
 	"name": "@navanatech/react-app",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Configuration for React Apps.",
 	"main": "./index.js",
 	"repository": {
@@ -15,6 +15,18 @@
 	"bugs": {
 		"url": "https://github.com/navanatech/react-app/issues"
 	},
+	"author": "Navana Tech (https://navanatech.in)",
+	"contributors": [
+		"Muthu Kumar <@mkrnavana> (https://mkr.pw)"
+	],
+	"keywords": [
+		"react-app",
+		"config",
+		"eslint",
+		"postcss",
+		"prettier",
+		"vite"
+	],
 	"dependencies": {
 		"@babel/eslint-parser": "^7.14.7",
 		"@typescript-eslint/eslint-plugin": "^4.0.0",
