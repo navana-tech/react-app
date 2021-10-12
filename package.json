@@ -1,11 +1,11 @@
 {
 	"name": "@navanatech/react-app",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Configuration for React Apps.",
 	"main": "./index.js",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/navanatech/react-app.git"
+		"url": "https://github.com/navana-tech/react-app.git"
 	},
 	"types": "./types.d.ts",
 	"license": "MIT",
@@ -13,7 +13,7 @@
 		"node": ">=14.0.0"
 	},
 	"bugs": {
-		"url": "https://github.com/navanatech/react-app/issues"
+		"url": "https://github.com/navana-tech/react-app/issues"
 	},
 	"author": "Navana Tech (https://navanatech.in)",
 	"contributors": [
