@@ -1,4 +1,4 @@
-# `@navanatech/react`
+# `@navanatech/react-app`
 
 Shareable configs for Navana Tech's React setup. Includes the following:
 
@@ -11,13 +11,13 @@ Shareable configs for Navana Tech's React setup. Includes the following:
 
 ```sh
 # Using npm
-npm install -D @navanatech/react vite typescript postcss eslint prettier
+npm install -D @navanatech/react-app vite typescript postcss eslint prettier
 
 # using yarn
-yarn add -D @navanatech/react vite typescript postcss eslint prettier
+yarn add -D @navanatech/react-app vite typescript postcss eslint prettier
 
 # using pnpm (preferred)
-pnpm add @navanatech/react vite typescript postcss eslint prettier
+pnpm add @navanatech/react-app vite typescript postcss eslint prettier
 ```
 
 Add this to your package.json:
@@ -30,7 +30,7 @@ Add this to your package.json:
 	"pretty": "pretty-quick --pattern '**/*.*(js|jsx|ts|tsx)'",
 	"lint": "eslint --ext .js --ext jsx --ext .ts --ext tsx ./src"
 },
-"prettier": "@navanatech/react/.prettierrc.json",
+"prettier": "@navanatech/react-app/.prettierrc.json",
 "eslintConfig": {
 	"extends": "react-app"
 },
@@ -42,7 +42,7 @@ Add the following config files:
 
 ```TypeScript
 import { defineConfig } from "vite";
-import viteConfig from "@navanatech/react/viteConfig";
+import viteConfig from "@navanatech/react-app/viteConfig";
 
 import { dependencies } from "./package.json";
 
@@ -58,9 +58,9 @@ export default defineConfig(viteConfig(manualChunks));
 
 ```JSON
 {
-	"extends": "@navanatech/react/tsconfig.json",
+	"extends": "@navanatech/react-app/tsconfig.json",
 	"compilerOptions": {
-		"types": ["vite/client", "@navanatech/react"],
+		"types": ["vite/client", "@navanatech/react-app"],
 	},
 	"include": ["./src", "./vite.config.ts"]
 }
@@ -69,5 +69,5 @@ export default defineConfig(viteConfig(manualChunks));
 ### postcss.config.json
 
 ```JavaScript
-module.exports = require("@navanatech/react/postcss.config");
+module.exports = require("@navanatech/react-app/postcss.config");
 ```
