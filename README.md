@@ -7,6 +7,10 @@ Shareable configs for Navana Tech's React setup. Includes the following:
 * postcss
 * svgr
 
+## Versioning
+
+Note that because changes to these configs may bring breaking changes to your app, each time packages are updated to latest, we will increment one major version. Only in case of issues fixed by updating a minor version of a dependency will this package publish minor/patch updates.
+
 ## How to use
 
 ```sh
