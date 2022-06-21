@@ -1,6 +1,8 @@
+// @ts-check
+
 const { defineConfig } = require("vite");
-const reactRefresh = require("@vitejs/plugin-react-refresh");
-const svgr = require("vite-plugin-svgr");
+const { default: react } = require("@vitejs/plugin-react");
+const { default: svgr } = require("vite-plugin-svgr");
 
 /**
  * @param {{ [k: string]: string[] }} manualChunks
@@ -16,7 +18,7 @@ const viteConfig = (manualChunks = {}, plugins = []) =>
 		},
 		plugins: [
 			...plugins.filter(plugin => plugin.enforce === "pre"),
-			reactRefresh(),
+			react(),
 			svgr(),
 			...plugins.filter(plugin => plugin.enforce !== "pre"),
 		],
